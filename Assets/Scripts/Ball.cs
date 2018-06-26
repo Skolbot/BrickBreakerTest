@@ -48,10 +48,12 @@ public class Ball : MonoBehaviour {
             if (hit_red == true)
             {
                 speed = speed / 1.5f;
+                hit_red = false;
             }
             if (hit_orange==true)
             {
                 speed = speed / 1.5f;
+                hit_orange = false;
             }
             StartCoroutine(Wait());
         }
